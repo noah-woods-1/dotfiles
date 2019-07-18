@@ -8,13 +8,13 @@ export ZSH="/home/w016ndw/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="random"
+ZSH_THEME="classyTouch"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
 # If set to an empty array, this variable will have no effect.
-ZSH_THEME_RANDOM_CANDIDATES=("geoffgarside" "kennethreitz" "lukerandall" "sunaku" "garyblessington" "fwalch" "jnrowe" "alanpeabody")
+ZSH_THEME_RANDOM_CANDIDATES=()
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -98,6 +98,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+ls -lh
+
 alias -g G='| grep -i'
 
 alias anaconda='$HOME/anaconda3/bin/anaconda-navigator &'
@@ -108,3 +110,4 @@ alias eclipse='$HOME/eclipse/java-2019-03/eclipse/eclipse &'
 alias ga='git add'
 alias lock='i3lock -c 000000'
 alias elements='cd /media/w016ndw/Elements/'
+alias clear='clear; ls -lh'
